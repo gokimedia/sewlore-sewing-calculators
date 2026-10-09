@@ -1,0 +1,289 @@
+# Copyright (C) 2026 Sewlore
+# This file is distributed under the MIT.
+msgid ""
+msgstr ""
+"Project-Id-Version: Sewlore Sewing Calculators 0.1.0\n"
+"Report-Msgid-Bugs-To: https://github.com/gokimedia/sewlore-sewing-tools\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-09T21:29:47+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: sewlore-sewing-calculators\n"
+
+#. Plugin Name of the plugin
+#: sewlore-sewing-calculators.php
+msgid "Sewlore Sewing Calculators"
+msgstr ""
+
+#. Description of the plugin
+#: sewlore-sewing-calculators.php
+msgid "Local fabric stretch and recovery, button-centre spacing, and centimetre, millimetre and inch calculators."
+msgstr ""
+
+#. Author of the plugin
+#: sewlore-sewing-calculators.php
+msgid "Sewlore"
+msgstr ""
+
+#. Author URI of the plugin
+#: sewlore-sewing-calculators.php
+msgid "https://sewlore.com/"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:60
+msgid "Enter your readings, then choose Calculate. Nothing is submitted or saved by this calculator."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:61
+msgid "Inputs changed. Calculate again to update the result."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:62
+msgid "Enter a number for each measurement. Use a decimal point or decimal comma, without grouping separators or scientific notation."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:63
+msgid "All fabric lengths and the opening length must be greater than zero."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:64
+msgid "Offsets and the conversion length must be zero or greater."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:65
+msgid "Stretched length cannot be less than original length. Check the marked points and units."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:66
+msgid "Use a whole number from 2 to 100 for the number of button centres."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:67
+msgid "The two offsets together must be less than the opening length."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:68
+msgid "These values exceed a reliable numerical range. Recheck the measurements and use a suitable unit."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:69
+msgid "Choose centimetres, millimetres or inches."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:70
+msgid "Check your readings: "
+msgstr ""
+
+#: sewlore-sewing-calculators.php:71
+msgid "Stretch"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:72
+msgid "Residual change after release"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:73
+msgid "Recovered extension"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:74
+msgid "Not defined: the stretched reading equals the original reading."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:75
+msgid "The released reading is outside the original-to-stretched range. The signed results are shown without clamping. Remeasure the sample; this arithmetic does not diagnose fabric behaviour."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:76
+msgid "A negative residual change means the released reading is shorter than the original. Recovery is a percentage of the stretched extension, not of the original length."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:77
+msgid "Interval between centres"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:78
+msgid "Centre positions measured from the top"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:79
+msgid "Converted length"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:80
+msgid "Results display up to six decimal places. Keep full readings; round only when marking with your ruler."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:106
+msgid "Sewing measurement calculators"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:107
+msgid "Arithmetic for your own readings. Use the same unit and the same marked points within each fabric test. A decimal point or decimal comma is accepted; do not use thousands separators."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:118
+msgid "Measurement-method reference from Sewlore"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:120
+msgid "Enable JavaScript for the interactive results. The formulas and worked examples above remain available."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:142
+msgid "Centimetres (cm)"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:143
+msgid "Millimetres (mm)"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:144
+msgid "Inches (in)"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:153
+msgid "Calculate"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:162
+msgid "Fabric stretch and recovery"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:163
+msgid "Record one marked direction before stretching, while stretched, and after release. These readings do not determine suitable garment ease or replace a fabric test."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:165
+msgid "Original length"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:166
+msgid "Stretched length"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:167
+msgid "Released length"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:168
+#: sewlore-sewing-calculators.php:190
+msgid "Unit for all three lengths"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:171
+msgid "Formulas and hypothetical example"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:172
+msgid "Stretch = 100 × (stretched − original) ÷ original. Residual change = 100 × (released − original) ÷ original. Recovered extension = 100 × (stretched − released) ÷ (stretched − original)."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:173
+msgid "For original 10 cm, stretched 14 cm and released 10.5 cm: stretch is 40%, residual change is 5%, and recovered extension is 87.5%. No sample was measured for this example."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:183
+msgid "Button-centre intervals"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:184
+msgid "Offsets locate the first centre from the top and the last centre from the bottom. Use 2–100 centres. Check closure instructions, seam allowances and buttonhole sizes before marking."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:186
+msgid "Opening length"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:187
+msgid "First centre: offset from top"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:188
+msgid "Last centre: offset from bottom"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:189
+msgid "Number of centres"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:193
+msgid "Formula and hypothetical example"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:194
+msgid "Interval = (opening length − top offset − bottom offset) ÷ (number of centres − 1). Position i = top offset + i × interval, with i starting at zero."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:195
+msgid "A 60 cm opening, 3 cm offsets at both ends and 7 centres give six 9 cm intervals. Positions from the top are 3, 12, 21, 30, 39, 48 and 57 cm. No garment was tested for this example."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:205
+msgid "Length unit conversion"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:206
+msgid "Enter a non-negative length. This converter changes the unit; the unit menus in the other tools only label the readings you enter."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:208
+msgid "Length to convert"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:209
+msgid "From unit"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:210
+msgid "To unit"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:213
+msgid "Conversion definitions"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:214
+msgid "1 cm = 10 mm. 1 international inch = exactly 25.4 mm. For example, 2.54 cm converts to 1 in. Conversion does not improve measurement precision."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:222
+#: sewlore-sewing-calculators.php:232
+msgid "Sewing Calculators"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:233
+msgid "Add a Shortcode block to a post or page, then paste:"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:235
+msgid "Choose a single tool with tool=\"stretch\", tool=\"buttons\" or tool=\"units\". The default shows all three."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:236
+msgid "Optional external reference link"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:237
+msgid "The calculator displays no external link by default. Only add show_reference=\"yes\" if you want a public link to the Sewlore measurement-method guide. Removing the link does not change any calculation."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:239
+msgid "Read the measurement-method guide"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:240
+msgid "Privacy and limits"
+msgstr ""
+
+#: sewlore-sewing-calculators.php:241
+msgid "Calculations run in the visitor’s browser using assets served by this site. The plugin has no telemetry, forms that submit data, cookies, storage, account requirement, external runtime or background requests. Clicking an optional reference link visits that external site."
+msgstr ""
+
+#: sewlore-sewing-calculators.php:242
+msgid "These tools calculate arithmetic from user readings. They do not measure fabrics, select garment ease, diagnose fit or guarantee closure performance. Check the relevant pattern and test a sample."
+msgstr ""

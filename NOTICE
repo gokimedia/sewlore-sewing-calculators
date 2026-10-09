@@ -1,0 +1,12 @@
+Sewlore Sewing Calculators 0.1.0
+Copyright (c) 2026 Sewlore. MIT license.
+
+The fabric stretch and recovery formulas and finite-range checks in assets/math.js
+are adapted from @sewingselami/sewlore-sewing-math 0.1.0, Copyright (c) 2026 Sewlore,
+MIT license. The complete license notice is retained in LICENSE.
+Source: https://github.com/gokimedia/sewlore-sewing-tools
+
+The shortcode renderer, local interface, decimal validation, three-unit conversion,
+button interval calculations, stylesheet, and documentation were developed for this
+package with AI assistance. This is an arithmetic tool; no fabric or garment
+measurements were collected for the worked examples.

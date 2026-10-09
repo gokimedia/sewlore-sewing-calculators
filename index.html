@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sewing Calculators Preview | Sewlore</title>
+<meta name="description" content="Try local fabric stretch and recovery, button-centre spacing, and cm/mm/in conversion. See the formulas and install the free WordPress plugin.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://gokimedia.github.io/sewlore-sewing-calculators/">
+<link rel="stylesheet" href="assets/calculators.css">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body>
+<a class="demo-skip" href="#calculators">Skip to calculators</a>
+<main class="demo-page">
+<header class="demo-header"><p class="demo-brand">Sewlore</p><h1>Sewing calculators for your own measurements</h1>
+<p>Compare fabric readings, plan button-centre intervals, and convert length units. This interactive preview uses the same local calculations as the free WordPress plugin.</p>
+<p><a href="#install">Add the calculators to a WordPress lesson</a></p></header>
+<section id="calculators" aria-label="Sewing measurement calculators">
+<div class="sewlore-calculators" data-sewlore-calculators data-strings="{&quot;initial&quot;:&quot;Enter your readings, then choose Calculate. Nothing is submitted or saved by this calculator.&quot;,&quot;changed&quot;:&quot;Inputs changed. Calculate again to update the result.&quot;,&quot;required&quot;:&quot;Enter a number for each measurement. Use a decimal point or decimal comma, without grouping separators or scientific notation.&quot;,&quot;positive&quot;:&quot;All fabric lengths and the opening length must be greater than zero.&quot;,&quot;nonnegative&quot;:&quot;Offsets and the conversion length must be zero or greater.&quot;,&quot;stretched&quot;:&quot;Stretched length cannot be less than original length. Check the marked points and units.&quot;,&quot;count&quot;:&quot;Use a whole number from 2 to 100 for the number of button centres.&quot;,&quot;span&quot;:&quot;The two offsets together must be less than the opening length.&quot;,&quot;range&quot;:&quot;These values exceed a reliable numerical range. Recheck the measurements and use a suitable unit.&quot;,&quot;unit&quot;:&quot;Choose centimetres, millimetres or inches.&quot;,&quot;errorPrefix&quot;:&quot;Check your readings: &quot;,&quot;stretchLabel&quot;:&quot;Stretch&quot;,&quot;growthLabel&quot;:&quot;Residual change after release&quot;,&quot;recoveryLabel&quot;:&quot;Recovered extension&quot;,&quot;undefined&quot;:&quot;Not defined: the stretched reading equals the original reading.&quot;,&quot;unusual&quot;:&quot;The released reading is outside the original-to-stretched range. The signed results are shown without clamping. Remeasure the sample; this arithmetic does not diagnose fabric behaviour.&quot;,&quot;signed&quot;:&quot;A negative residual change means the released reading is shorter than the original. Recovery is a percentage of the stretched extension, not of the original length.&quot;,&quot;spacingLabel&quot;:&quot;Interval between centres&quot;,&quot;positionsLabel&quot;:&quot;Centre positions measured from the top&quot;,&quot;conversion&quot;:&quot;Converted length&quot;,&quot;rounding&quot;:&quot;Results display up to six decimal places. Keep full readings; round only when marking with your ruler.&quot;}">
+			<p class="sewlore-calculators__intro">Sewing measurement calculators</p>
+			<p>Arithmetic for your own readings. Use the same unit and the same marked points within each fabric test. A decimal point or decimal comma is accepted; do not use thousands separators.</p>
+									<fieldset class="sewlore-calculators__tool" data-tool="stretch">
+			<legend>Fabric stretch and recovery</legend>
+			<p id="sewlore-calc-1-help-stretch">Record one marked direction before stretching, while stretched, and after release. These readings do not determine suitable garment ease or replace a fabric test.</p>
+			<div class="sewlore-calculators__grid">
+						<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-stretch-original">Original length</label>
+			<input id="sewlore-calc-1-stretch-original" data-field="stretch-original" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-stretch">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-stretch-stretched">Stretched length</label>
+			<input id="sewlore-calc-1-stretch-stretched" data-field="stretch-stretched" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-stretch">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-stretch-released">Released length</label>
+			<input id="sewlore-calc-1-stretch-released" data-field="stretch-released" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-stretch">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-stretch-unit">Unit for all three lengths</label>
+			<select id="sewlore-calc-1-stretch-unit" data-field="stretch-unit">
+				<option value="cm">Centimetres (cm)</option>
+				<option value="mm">Millimetres (mm)</option>
+				<option value="in">Inches (in)</option>
+			</select>
+		</div>
+					</div>
+					<button type="button" data-calculate="stretch" aria-controls="sewlore-calc-1-result-stretch">Calculate</button>
+		<div id="sewlore-calc-1-result-stretch" class="sewlore-calculators__result" role="status" aria-live="polite" aria-atomic="true" data-result></div>
+					<details><summary>Formulas and hypothetical example</summary>
+				<p>Stretch = 100 × (stretched − original) ÷ original. Residual change = 100 × (released − original) ÷ original. Recovered extension = 100 × (stretched − released) ÷ (stretched − original).</p>
+				<p>For original 10 cm, stretched 14 cm and released 10.5 cm: stretch is 40%, residual change is 5%, and recovered extension is 87.5%. No sample was measured for this example.</p>
+			</details>
+		</fieldset>
+														<fieldset class="sewlore-calculators__tool" data-tool="buttons">
+			<legend>Button-centre intervals</legend>
+			<p id="sewlore-calc-1-help-buttons">Offsets locate the first centre from the top and the last centre from the bottom. Use 2–100 centres. Check closure instructions, seam allowances and buttonhole sizes before marking.</p>
+			<div class="sewlore-calculators__grid">
+						<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-buttons-length">Opening length</label>
+			<input id="sewlore-calc-1-buttons-length" data-field="buttons-length" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-buttons">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-buttons-top">First centre: offset from top</label>
+			<input id="sewlore-calc-1-buttons-top" data-field="buttons-top" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-buttons">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-buttons-bottom">Last centre: offset from bottom</label>
+			<input id="sewlore-calc-1-buttons-bottom" data-field="buttons-bottom" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-buttons">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-buttons-count">Number of centres</label>
+			<input id="sewlore-calc-1-buttons-count" data-field="buttons-count" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-buttons">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-buttons-unit">Unit for all three lengths</label>
+			<select id="sewlore-calc-1-buttons-unit" data-field="buttons-unit">
+				<option value="cm">Centimetres (cm)</option>
+				<option value="mm">Millimetres (mm)</option>
+				<option value="in">Inches (in)</option>
+			</select>
+		</div>
+					</div>
+					<button type="button" data-calculate="buttons" aria-controls="sewlore-calc-1-result-buttons">Calculate</button>
+		<div id="sewlore-calc-1-result-buttons" class="sewlore-calculators__result" role="status" aria-live="polite" aria-atomic="true" data-result></div>
+					<details><summary>Formula and hypothetical example</summary>
+				<p>Interval = (opening length − top offset − bottom offset) ÷ (number of centres − 1). Position i = top offset + i × interval, with i starting at zero.</p>
+				<p>A 60 cm opening, 3 cm offsets at both ends and 7 centres give six 9 cm intervals. Positions from the top are 3, 12, 21, 30, 39, 48 and 57 cm. No garment was tested for this example.</p>
+			</details>
+		</fieldset>
+														<fieldset class="sewlore-calculators__tool" data-tool="units">
+			<legend>Length unit conversion</legend>
+			<p id="sewlore-calc-1-help-units">Enter a non-negative length. This converter changes the unit; the unit menus in the other tools only label the readings you enter.</p>
+			<div class="sewlore-calculators__grid">
+						<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-units-value">Length to convert</label>
+			<input id="sewlore-calc-1-units-value" data-field="units-value" type="text" inputmode="decimal" maxlength="48" autocomplete="off" spellcheck="false" aria-describedby="sewlore-calc-1-help-units">
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-units-from">From unit</label>
+			<select id="sewlore-calc-1-units-from" data-field="units-from">
+				<option value="cm">Centimetres (cm)</option>
+				<option value="mm">Millimetres (mm)</option>
+				<option value="in">Inches (in)</option>
+			</select>
+		</div>
+								<div class="sewlore-calculators__field">
+			<label for="sewlore-calc-1-units-to">To unit</label>
+			<select id="sewlore-calc-1-units-to" data-field="units-to">
+				<option value="cm">Centimetres (cm)</option>
+				<option value="mm">Millimetres (mm)</option>
+				<option value="in">Inches (in)</option>
+			</select>
+		</div>
+					</div>
+					<button type="button" data-calculate="units" aria-controls="sewlore-calc-1-result-units">Calculate</button>
+		<div id="sewlore-calc-1-result-units" class="sewlore-calculators__result" role="status" aria-live="polite" aria-atomic="true" data-result></div>
+					<details><summary>Conversion definitions</summary>
+				<p>1 cm = 10 mm. 1 international inch = exactly 25.4 mm. For example, 2.54 cm converts to 1 in. Conversion does not improve measurement precision.</p>
+			</details>
+		</fieldset>
+											<noscript><p>Enable JavaScript for the interactive results. The formulas and worked examples above remain available.</p></noscript>
+		</div>
+</section>
+<section id="install" class="demo-install" aria-labelledby="install-title">
+<h2 id="install-title">Install the WordPress plugin</h2>
+<p>Upload the <a href="releases/sewlore-sewing-calculators-0.1.0.zip" download>version 0.1.0 plugin ZIP</a> through Plugins → Add New → Upload Plugin, activate it, and insert this into the built-in Shortcode block:</p>
+<pre><code>[sewlore_sewing_calculators]</code></pre>
+<p>Choose <code>tool="stretch"</code>, <code>tool="buttons"</code> or <code>tool="units"</code> to display a single tool. The installed plugin adds no public reference link by default.</p>
+<p><a href="https://github.com/gokimedia/sewlore-sewing-calculators">Read the source and installation documentation</a>. MIT license; declared requirements: WordPress 6.5 and PHP 7.4 or newer. Tested on WordPress 7.1.3 and PHP 8.5.11.</p>
+</section>
+<footer class="demo-footer"><p>Recording method: <a href="https://sewlore.com/pages/fabric-measurement-methods-guide">Sewlore measurement-method guide</a>.</p>
+<p>Calculations run in your browser. No readings are submitted or saved by these tools. Worked examples are hypothetical; use your pattern instructions and test your own sample.</p>
+<p>© 2026 Sewlore · <a href="LICENSE">MIT license</a></p></footer>
+</main>
+<script src="assets/math.js"></script>
+<script src="assets/calculators.js"></script>
+</body>
+</html>

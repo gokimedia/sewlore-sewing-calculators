@@ -1,0 +1,45 @@
+/* Sewlore Sewing Calculators. MIT License. Copyright (c) 2026 Sewlore. */
+.sewlore-calculators {
+	box-sizing: border-box;
+	max-width: 54rem;
+	margin: 1.5rem 0;
+	padding: clamp(1rem, 3vw, 2rem);
+	border: 1px solid #b8c3bc;
+	border-radius: .75rem;
+	background: #faf8f3;
+	color: #243a32;
+	font-family: inherit;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+.sewlore-calculators *, .sewlore-calculators *::before, .sewlore-calculators *::after { box-sizing: border-box; }
+.sewlore-calculators p { margin: .5rem 0 1rem; }
+.sewlore-calculators__intro { font-size: 1.4rem; font-weight: 700; }
+.sewlore-calculators__tool { min-width: 0; margin: 1.6rem 0 0; padding: 1rem; border: 1px solid #aeb9b1; border-radius: .5rem; }
+.sewlore-calculators__tool legend { max-width: 100%; padding: 0 .4rem; font-size: 1.2rem; font-weight: 700; }
+.sewlore-calculators__grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: 1rem; margin: 1rem 0; }
+.sewlore-calculators__field label { display: block; margin-bottom: .35rem; font-weight: 600; }
+.sewlore-calculators__field input, .sewlore-calculators__field select {
+	display: block; width: 100%; min-height: 2.8rem; margin: 0; padding: .55rem .65rem;
+	border: 1px solid #6c7e72; border-radius: .25rem; background: #fff; color: #172d23; font: inherit;
+}
+.sewlore-calculators button {
+	display: inline-block; min-height: 2.8rem; margin: .25rem 0; padding: .6rem 1.2rem;
+	border: 2px solid #254d3d; border-radius: .35rem; background: #254d3d; color: #fff; font: inherit; font-weight: 700; cursor: pointer;
+}
+.sewlore-calculators button:hover { background: #173629; }
+.sewlore-calculators button:focus-visible, .sewlore-calculators input:focus-visible, .sewlore-calculators select:focus-visible,
+.sewlore-calculators a:focus-visible, .sewlore-calculators summary:focus-visible { outline: 3px solid #825121; outline-offset: 3px; }
+.sewlore-calculators__result { min-height: 3rem; margin: .8rem 0; padding: .85rem; border-left: 4px solid #527963; background: #edf2ec; overflow-wrap: anywhere; }
+.sewlore-calculators__result p:last-child { margin-bottom: 0; }
+.sewlore-calculators__result--error { border-left-color: #913d31; background: #fff0e9; color: #6b241c; }
+.sewlore-calculators [aria-invalid="true"] { border: 2px solid #913d31; }
+.sewlore-calculators__metric { font-size: 1.18rem; font-weight: 700; }
+.sewlore-calculators details { margin-top: 1rem; }
+.sewlore-calculators summary { cursor: pointer; font-weight: 600; }
+.sewlore-calculators a { color: #234e3b; text-decoration: underline; text-underline-offset: .15em; }
+.sewlore-calculators__reference { margin-top: 1.5rem !important; }
+@media (forced-colors: active) {
+	.sewlore-calculators, .sewlore-calculators__tool, .sewlore-calculators__result { border: 1px solid CanvasText; }
+	.sewlore-calculators button { border: 2px solid ButtonText; }
+}
